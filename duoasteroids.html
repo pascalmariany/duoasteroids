@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Duo Asteroids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="DuoAsteroids.mp3" type="audio/mp3">
+        Uw browser ondersteunt geen audio.
+    </audio>
+    <canvas id="gameCanvas"></canvas>
+    <script src="game.js"></script>
+    <script>
+        window.onload = function() {
+            startBackgroundMusic(); // Zorgt ervoor dat de muziek start
+            startGame(); // Start het spel
+        };
+    </script>
+</body>
+</html>
